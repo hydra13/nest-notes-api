@@ -20,4 +20,7 @@ export class NotesService {
         });
         return await newNote.save();
     }
+    async delete(id: string): Promise<Note> {
+        return await this.noteModel.findByIdAndRemove(id);
+    }
 }

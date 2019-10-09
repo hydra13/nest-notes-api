@@ -22,8 +22,8 @@ export class NotesController {
     }
 
     @Delete(':id')
-    delete(@Param('id') id): string {
-        return 'Delete ' + id;
+    delete(@Param('id') id): Promise<Note> {
+        return this.notesService.delete(id);
     }
 
     @Put(':id')
