@@ -27,7 +27,7 @@ export class NotesController {
     }
 
     @Put(':id')
-    update(@Body() updateNoteDto: CreateNoteDto, @Param('id') id): string {
-        return 'Update id: ' + id + '; New title: ' + updateNoteDto.title;
+    update(@Body() updateNoteDto: CreateNoteDto, @Param('id') id): Promise<Note> {
+        return this.notesService.update(id, updateNoteDto);
     }
 }

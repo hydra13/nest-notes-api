@@ -23,4 +23,8 @@ export class NotesService {
     async delete(id: string): Promise<Note> {
         return await this.noteModel.findByIdAndRemove(id);
     }
+    async update(id: string, note: Note): Promise<Note> {
+        note.updated = new Date().getTime();
+        return await this.noteModel.findByIdAndUpdate(id, note, { new: true });
+    }
 }
