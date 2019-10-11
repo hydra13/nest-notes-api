@@ -16,6 +16,10 @@ git clone https://github.com/hydra13/nest-notes-api.git
 cd nest-notes-api
 npm i
 ```
+- Configure your MongoDB connection in:
+```
+src/config/keys.ts
+```
 - Start service:
 ```
 npm start
@@ -51,3 +55,10 @@ PUT /notes/:id
 ```
 DELETE /notes/:id`;
 ```
+
+Used:
+---
+- TypeScript
+- Node.js
+- MongoDB ((https://cloud.mongodb.com/)[Mongo Cloud])
+- Nest.js
