@@ -60,5 +60,5 @@ Used:
 ---
 - TypeScript
 - Node.js
-- MongoDB ((https://cloud.mongodb.com/)[Mongo Cloud])
+- MongoDB (Mongo Cloud - https://cloud.mongodb.com/)
 - Nest.js
